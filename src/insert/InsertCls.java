@@ -11,6 +11,7 @@ public class InsertCls {
         Connection con= CreateConnection.getConnection();
         PreparedStatement pst = con.prepareStatement(SqlQueries.sqlInsert);
         pst.execute();
+        System.out.println("Dunya");
 
     }
 }

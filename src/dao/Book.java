@@ -11,6 +11,7 @@ public class Book {
 
 
     public Book() {
+        System.out.println("axiret");
     }
 
     public Book(int id, String bookName, String bookAuthor, int bookPage, double bookPrice, String bookDate, String bookPublishingHouse) {

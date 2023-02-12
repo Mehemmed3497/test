@@ -3,12 +3,13 @@ package dao;
 import java.sql.*;
 
 public class SelectCLS {
+    //mehmed sen bura yazdighini commit ve push ediisen
     public static void main(String[] args) {
         try {
             Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "GR99", "1234");
             String sqlcmd = "SELECT * FROM BOOKS";
             PreparedStatement pst = con.prepareStatement(sqlcmd);
-            ResultSet resultset = pst.executeQuery();c
+            ResultSet resultset = pst.executeQuery();
             while (resultset.next()) {
                 int id = resultset.getInt("ID");
                 String bookname = resultset.getString(2);

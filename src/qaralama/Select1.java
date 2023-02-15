@@ -22,6 +22,7 @@ public class Select1 {
             }
         }catch (SQLException e) {
             e.printStackTrace();
+            System.out.println("QAxxx");
         }
     }
 }

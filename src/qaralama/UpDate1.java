@@ -12,5 +12,6 @@ public class UpDate1 {
 
         PreparedStatement pst = con.prepareStatement(upDateCommand);
         pst.execute();
+        System.out.println("GitHub");
     }
 }
